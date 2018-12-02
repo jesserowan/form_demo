@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Thanks!</title>
+</head>
+<body>
+    <h1 class="jumbotron">Thanks for your submission!</h1>
+    <div class="container">
+        <h3>Your submission</h3>
+        <p>Name: {{ values.username }}</p>
+        <p>Gender: {{ values.radio_select }}</p>
+        <p>Location: {{ values.location }}</p>
+        <p>Favorite language: {{ values.favorite }}</p>
+        <p>Comments: {{values.comments }}</p>
+        <p>Promotions: {{values.promotions }}</p>
+    </div>
+</body>
+</html>
