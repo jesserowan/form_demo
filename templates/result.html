@@ -12,12 +12,11 @@
     <h1 class="jumbotron">Thanks for your submission!</h1>
     <div class="container">
         <h3>Your submission</h3>
-        <p>Name: {{ values.username }}</p>
-        <p>Gender: {{ values.radio_select }}</p>
-        <p>Location: {{ values.location }}</p>
-        <p>Favorite language: {{ values.favorite }}</p>
-        <p>Comments: {{values.comments }}</p>
-        <p>Promotions: {{values.promotions }}</p>
+        <p>Name: {{ user[0]['name'] }}</p>
+        <p>Gender: {{ user[0]['gender'] }}</p>
+        <p>Location: {{ user[0]['location'] }}</p>
+        <p>Favorite language: {{ user[0]['favorite'] }}</p>
+        <p>Comments: {{ user[0]['comments'] }}</p>
     </div>
 </body>
 </html>
